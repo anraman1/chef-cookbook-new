@@ -1,0 +1,16 @@
+package 'ntp' do 
+ action :install 
+end
+
+package 'git' do 
+ action :install 
+end
+
+
+file '/tmp/yrdy' do
+ content 'this is is property'
+ action :create
+ owner 'root'
+ group 'root'
+ mode 777
+end
